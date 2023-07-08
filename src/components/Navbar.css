@@ -1,0 +1,245 @@
+.navbar {
+    background-color: #0F1111;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar__logo {
+    width: 78px;
+    object-fit: contain;
+    margin-left: 14px;
+    margin-right: 22px;
+    margin-top: 14px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.navbar__search {
+    display: flex;
+    flex: 1;
+}
+
+.navbar__searchInput {
+    height: 12px;
+    padding: 10px;
+    border: none;
+    width: 100%;
+}
+
+
+.navbar__searchIcon {
+    background-color: #ecb062;
+    height: 22px !important;
+    padding: 5px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+.dropdown__button {
+    position: relative;
+    padding: 8px;
+    height: 32px;
+    background-color: #e1e3e4;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+
+.dropdown__initialCategory {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 12px;
+}
+  
+.dropdown__arrow {
+    display: inline-block;
+    margin-top: 3px;
+    margin-left: 5px;
+    border: 2px solid #333;
+    border-width: 0 2px 2px 0;
+    padding: 2px;
+    transform: rotate(45deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+  
+.dropdown__menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    background-color: #3a3535;
+    opacity: 0.9;
+    border: 1px solid #484545;
+    padding: 10px;
+    display: none;
+    border-radius: 10px;
+    width: 150px;
+}
+
+  
+.dropdown:hover .dropdown__menu {
+    display: block;
+}
+
+  
+.dropdown__menu a {
+    display: block;
+    padding: 5px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+  
+.dropdown__menu a:hover {
+    background-color: #4b4d50;
+}
+
+
+.navbar__searchIcon:hover {
+    background-color: #e79c39;
+    height: 22px !important;
+    padding: 5px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    cursor: pointer;
+}
+
+
+.navbar_items {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.navbar__link {
+    text-decoration: none;
+    border: 1px solid #0F1111;
+    margin: 0 7px;
+}
+
+.navbar__link:hover {
+    text-decoration: none;
+    border: 1px solid white;
+    margin: 0 7px;
+}
+
+
+.navbar__option {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin: 0 5px;
+}
+
+
+.dropdown__buttonLogout {
+    position: relative;
+    height: 38px;
+    background-color: #0F1111;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.dropdown__arrowLogout {
+    display: inline-block;
+    margin-top: 10px;
+    border: 2px solid #333;
+    border-width: 0 2px 2px 0;
+    padding: 2px;
+    transform: rotate(45deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+.dropdown__menuLogout {
+    position: absolute;
+    top: 100%;
+    left: 5px;
+    z-index: 1;
+    background-color: #ffffff;
+    border: 1px solid #484545;
+    padding: 3px;
+    display: none;
+    border-radius: 5px;
+    width: 95px;
+    margin-top: 1px;
+    text-align: center;
+}
+
+.dropdown:hover .dropdown__menuLogout {
+    display: block;
+}
+
+
+.dropdown__menuLogout a {
+    display: block;
+    padding: 5px;
+    color: #312d2d;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+.dropdown__menuLogout a:hover {
+    color: #2f2727;
+    cursor: pointer;
+}
+  
+  
+.dropdown__logout {
+    text-decoration: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
+.navbar__optionLineOne {
+    font-size: 10px;
+    margin-top: 5px;
+}
+
+.navbar__optionLineTwo {
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.navbar__optionCart {
+    color: white;
+    display: flex;
+    margin: 0 10px;
+}
+
+.navbar__optionCartIcon {
+    color: white;
+}
+
+.navbar__cartCount {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar__optionCartCount {
+    font-size: 15px;
+    font-weight: 800;
+    color: #f28d08;
+}
